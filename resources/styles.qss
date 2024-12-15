@@ -1,0 +1,89 @@
+/* resources/styles.qss */
+
+QTableView {
+    background-color: #2b2b2b;
+    color: #ffffff;
+    border: 1px solid #232323; /* Dodano umjesto gridline-color */
+    
+}
+
+QTableView::item {
+    border-bottom: 1px solid #2ba51d; /* Horizontalne linije između redova */
+    border-right: 1px solid #142c11;  /* Vertikalne linije između kolona */
+}
+
+QHeaderView::section {
+    background-color: #3a3a3a;
+    color: #ffffff;
+    padding: 4px;
+    border: 1px solid #3a3a3a;
+}
+
+QTableView::item:selected {
+    background-color: #1f8222;
+}
+
+QLineEdit {
+    background-color: #3a3a3a;
+    color: #ffffff;
+    padding: 4px;
+    border: 1px solid #555555;
+}
+
+QPushButton {
+    background-color: #1f8222;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+}
+
+QPushButton:hover {
+    background-color: #cd6d19; /* Tamnije zelena pri lebdenju */
+}
+
+QListWidget{
+    border : 2px solid black;
+    background : rgb(68, 110, 68);
+}
+QListWidget QScrollBar{
+    background : rgb(84, 93, 96);
+}
+ QListView::item:selected{
+    border : 1px solid black;
+    background : rgb(167, 89, 6);
+}
+QToolBar QToolButton { /* Base style for all toolbar buttons */
+    background-color: #277610; /* Light gray background */
+    border: 1px solid #cccccc; /* Subtle border */
+    padding: 5px;  /* Add some padding */
+    border-radius: 3px;  /* Rounded corners */
+}
+
+QToolBar QToolButton:hover { /* Hover effect */
+    background-color: #cd6d19; /* Slightly darker gray */
+}
+
+QToolBar QToolButton:pressed {  /* Pressed effect */
+    background-color: #d0d0d0; /* Even darker */
+}
+
+/* Specific styles for button groups (example) */
+
+QDialog#EditWindow QToolBar QAbstractButton {
+    color: white;
+}
+
+
+
+
+QMenuBar::item { /* Style for all menu bar items */
+    padding: 5px 15px; /* Add some padding */
+
+    min-height: 15px; /* Adjust as needed */
+}
+
+QMenuBar::item:selected { /* Style for selected menu items */
+    background-color: #999999; /* Slightly darker when selected */
+}
+
